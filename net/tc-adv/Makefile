@@ -12,7 +12,7 @@ PKG_VERSION:=4.1.0-git
 PKG_RELEASE:=20151029
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=git://github.com/dtaht/tc-adv
+PKG_SOURCE_URL:=git://github.com/antoinedeschenes/tc-adv
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_VERSION:=4452eae9fb9106916c5b1f4757e839d259d9cec0
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
