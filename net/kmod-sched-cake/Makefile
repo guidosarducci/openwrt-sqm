@@ -10,7 +10,7 @@ include $(INCLUDE_DIR)/kernel.mk
 
 PKG_NAME:=sched-cake
 PKG_VERSION:=2015-git
-PKG_RELEASE:=20160303
+PKG_RELEASE:=20160316
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=git://github.com/dtaht/sch_cake
