@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=tc-adv
 PKG_VERSION:=4.1.0-git
-PKG_RELEASE:=20160528
+PKG_RELEASE:=20160529
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=git://github.com/dtaht/tc-adv
