@@ -10,11 +10,11 @@ include $(INCLUDE_DIR)/kernel.mk
 
 PKG_NAME:=sched-cake
 PKG_VERSION:=2016-git
-PKG_RELEASE:=20160712
+PKG_RELEASE:=20161003
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=git://github.com/dtaht/sch_cake
-PKG_SOURCE_VERSION:=747954dd0bde66bb28d2b6c2c109597c9abbe5c5
+PKG_SOURCE_VERSION:=76fcd31c841f5f660d34e0257d00fc3f9e0d798f
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_BUILD_ID:=$(PKG_SOURCE_VERSION)
@@ -28,6 +28,7 @@ define KernelPackage/sched-cake
   FILES:=$(PKG_BUILD_DIR)/sch_cake.ko
   VERSION:=$(LINUX_VERSION)-$(LINUX_RELEASE)
   AUTOLOAD:=$(call AutoLoad,75,sch_cake)
+  DEPENDS:=+kmod-ipt-conntrack
 endef
 
 include $(INCLUDE_DIR)/kernel-defaults.mk
